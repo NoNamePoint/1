@@ -55,6 +55,7 @@ if __name__ == '__main__':
         parser.add_argument("path", type=str, help='Path to sort')
         parser.add_argument("-a","--action", help='Usage: <your path to the directory to sort> -p/--path sort', default='sort')
         args = parser.parse_args()
+        print(args)
         if args.action == "sort":
             sortfiles(args.path)
     except:
